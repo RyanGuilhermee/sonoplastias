@@ -22,15 +22,15 @@ export const allCards = () => {
                      <h5 class="card-title">${dataSoundEffects[count].displayName}</h5>
                      <div class="d-flex justify-content-around mt-5">
                         <button class="btn btn-link play" title="Tocar áudio" onclick="play('${dataSoundEffects[count].path}');">
-                           <img src="./img/play.svg" style="width: 24px; height: 24px;" alt="imagem de play">
+                           <img src="./src/img/play.svg" style="width: 24px; height: 24px;" alt="imagem de play">
                         </button>
                         <button class="btn btn-link" title="Download">
                            <a href="${dataSoundEffects[count].path}" download="${dataSoundEffects[count].displayName}">
-                              <img src="./img/download.svg" style="width: 24px; height: 24px;" alt="imagem de download">
+                              <img src="./src/img/download.svg" style="width: 24px; height: 24px;" alt="imagem de download">
                            </a>
                         </button>
                         <button class="btn btn-link" title="Compartilhar">
-                           <img src="./img/share.svg" style="width: 24px; height: 24px;" alt="Compartilhar">
+                           <img src="./src/img/share.svg" style="width: 24px; height: 24px;" alt="Compartilhar">
                         </button>
                      </div>
                   </div>
