@@ -15,6 +15,6 @@ const shareEffect = async (url, fileName) => {
 
         alert('Seu navegador não suporta compartilhamento nativo ☹');
     } catch (error) {
-        alert('Falha ao tentar compartilhar.');
+        console.log('Falha ao tentar compartilhar.');
     }
 }

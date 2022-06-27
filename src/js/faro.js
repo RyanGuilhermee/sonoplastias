@@ -32,7 +32,7 @@ export const faroCards = (dataSearch = null) => {
                               <img src="./src/img/download.svg" style="width: 24px; height: 24px;" alt="imagem de download">
                            </a>
                         </button>
-                        <button class="btn btn-link" title="Compartilhar">
+                        <button class="btn btn-link" title="Compartilhar" onclick="shareEffect('${faroSoundEffects[count].path}', '${faroSoundEffects[count].displayName}');">
                            <img src="./src/img/share.svg" style="width: 24px; height: 24px;" alt="Compartilhar">
                         </button>
                      </div>
