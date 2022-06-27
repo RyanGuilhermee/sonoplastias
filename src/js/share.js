@@ -7,14 +7,14 @@ const shareEffect = async (url, fileName) => {
         if (navigator.canShare && navigator.canShare({ files: [file] })) {
             await navigator.share({
                 files: [file],
+                title: `${fileName}`,
             });
 
-            console.log('compartilhado com sucesso');
             return;
         }
 
-        console.log('navegador não suporta');
+        alert('Seu navegador não suporta compartilhamento nativo ☹');
     } catch (error) {
-        console.log('falha ao tentar compartilhar', error);
+        alert('Falha ao tentar compartilhar.');
     }
 }
