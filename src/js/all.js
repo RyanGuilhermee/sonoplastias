@@ -29,7 +29,7 @@ export const allCards = () => {
                               <img src="./src/img/download.svg" style="width: 24px; height: 24px;" alt="imagem de download">
                            </a>
                         </button>
-                        <button class="btn btn-link" title="Compartilhar">
+                        <button class="btn btn-link" title="Compartilhar" onclick="shareEffect('${dataSoundEffects[count].path}', '${dataSoundEffects[count].displayName}');">
                            <img src="./src/img/share.svg" style="width: 24px; height: 24px;" alt="Compartilhar">
                         </button>
                      </div>
